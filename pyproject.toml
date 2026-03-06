@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "fl-bar-processing"
+version = "0.1.0"
+description = "Fluorescence bar processing project"
+authors = ["HarukaNarita <kumachan.haruchan.hm@gmail.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.13"
+tifffile = "^2025.3.30"
+scikit-image = "^0.25.2"
+seaborn = "^0.13.2"
+pystackreg = "^0.2.8"
+kmeans1d = "^0.4.0"
+jupyter = "^1.0.0"
+ipykernel = "^6.0.0"
+numpy = ">=1.24,<2.3"
+pandas = "^2.0.0"
+matplotlib = "^3.0.0"
+torch = "^2.0.0"
+torchvision = "^0.22.0"
+opencv-python-headless = "^4.11.0.86"
+scikit-learn = "^1.6.1"
+albumentations = "^2.0.8"
+ultralytics = "^8.3.146"
+google = "^3.0.0"
+pydrive2 = "^1.21.3"
+scikit-learn-extra = "^0.3.0"
+matplotlib-venn = "^1.1.2"
+llvmlite = {version = "^0.44.0", allow-prereleases = true}
+umap-learn = {version = "^0.5.7", allow-prereleases = true}
+numba = ">=0.59.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.0.0"
+black = "^23.0.0"
+flake8 = "^6.0.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
